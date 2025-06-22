@@ -12,7 +12,22 @@ https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.htm
 
 # Hooki
 
+Warto na początek wiedzieć, że nie można używać Hooków wewnątrz instrukcji warunkowych takich jak "if", "else", czy "switch". Najlepiej definiować je na początku componentu. 
 ## useState
+
+useState to hook w React'cie, który pozwala komponentom funkcyjnym mieć swój własny stan (czyli przechowywać dane, które mogą się zmienić w czasie).
+
+Takim klasycznym przykładem będzie funkcja "count".
+
+```ts
+const [count, setCount] = useState(0);
+```
+
+count – to aktualna wartość stanu (tutaj: 0).
+setCount – to funkcja, która zmienia stan.
+useState(0) – 0 to wartość początkowa.
+
+https://react.dev/reference/react/useState
 
 # Wzorce
 
