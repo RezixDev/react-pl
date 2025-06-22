@@ -1,7 +1,18 @@
-# react-pl
-React Pl
+# react-pl 2025
 
 
+# Co się zmieniło w Reacie na przestrzeni Lat?
+
+## Co wciąż zobaczycie w poradnikach, a czego nie musicie już robić?
+
+Nie ma już potrzeby importowania Reacta do waszych komponentów.
+Kiedyś, React był kompilowany przez Babel (przed React 17), z tego względu był wymagany React w zakresie Componentu, obecnie nie jest to wymagane, dzięki "new JSX transform". Babel już nie używa React.createElement, tylko importuje specjalne funkcje z pakietu react/jsx-runtime automatycznie.
+
+https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
+
+# Hooki
+
+## useState
 
 # Wzorce
 
