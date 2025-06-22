@@ -1,5 +1,9 @@
 # Poradnik React (2025)
 
+Jeżeli chcecie testować funkcje Reacta bez potrzeby tworzenia kolejnych projektów na dysku, to przydatną w tym przypadku platformą może być StackBlitz:
+https://stackblitz.com/
+
+Na niej możecie tworzyć własne Snippety, Projekty i dzielić się nimi ze znajomymi, bądź innymi programistami np: na Discordzie, aby pokazać jak coś działa, coś wytłumaczyć, bądź wskazać z czym macie problemy i poprosić innych o pomoc.
 
 # Co się zmieniło w Reacie na przestrzeni Lat?
 
