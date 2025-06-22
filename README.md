@@ -73,6 +73,9 @@ export function Counter() {
 }
 ```
 
+Inny przykład użycia useState to lista Todo:
+
+
 https://react.dev/reference/react/useState
 
 # Wzorce
