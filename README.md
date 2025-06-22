@@ -1,4 +1,4 @@
-# react-pl 2025
+# Poradnik React (2025)
 
 
 # Co się zmieniło w Reacie na przestrzeni Lat?
