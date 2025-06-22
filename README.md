@@ -27,6 +27,46 @@ count – to aktualna wartość stanu (tutaj: 0).
 setCount – to funkcja, która zmienia stan.
 useState(0) – 0 to wartość początkowa.
 
+przykład w użyciu jako komponent:
+
+```ts 
+import { useState } from 'react';
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+
+  function increase() {
+    setCount(count + 1)
+  }
+
+  return (
+    <div>
+      <h2>Licznik: {count}</h2>
+      <button onClick={increase}>Zwiększ</button>
+    </div>
+  );
+}
+```
+
+Aby było jeszcze bardziej współczesnie, możemy użyć funkcji strzałkowej:
+
+```ts
+import { useState } from 'react';
+
+export function Counter() {
+  const [count, setCount] = useState(0);
+
+  const increase = () => setCount(count + 1);
+
+  return (
+    <div>
+      <h2>Licznik: {count}</h2>
+      <button onClick={increase}>Zwiększ</button>
+    </div>
+  );
+}
+```
+
 https://react.dev/reference/react/useState
 
 # Wzorce
