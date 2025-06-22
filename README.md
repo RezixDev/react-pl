@@ -24,7 +24,9 @@ const [count, setCount] = useState(0);
 ```
 
 count – to aktualna wartość stanu (tutaj: 0).
+
 setCount – to funkcja, która zmienia stan.
+
 useState(0) – 0 to wartość początkowa.
 
 przykład w użyciu jako komponent:
