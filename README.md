@@ -88,26 +88,33 @@ W skrócie: useEffect pozwala uruchamiać efekty uboczne (ang. side effects) —
 
 Ale czym właściwie są "efekty uboczne"? Są to zdarzenia w twoim kodzie, które mają miejsce poza renderingem twojej aplikacji.
 
-Syntax useEffect wygląda tak:
+Składnia useEffect wygląda tak:
 
 ```
 useEffect(() => {
-
+  // kod, który ma się wykonać
 }, []);
 ```
 
-Hook "useEffect" a w nim funkcja strzałkowa wraz blokiem kodu oraz z tablicą []. W tej tablicy definiujemy zależności. 
+"useEffect" a w nim funkcja strzałkowa wraz blokiem kodu oraz z tablicą []. W tej tablicy definiujemy zależności. 
 Hook ten ma zareagować na pewne zmiany w kodzie, np: jak z naszm przykładem piłki nożnej, gdy wynik meczu się zmieni, przykładowo z 0 na 1, to nasze UI powinno się też zmienić i pokazać zaktualizowany wynik. 
 
 Jeżeli wynik zmieni się ponownie, to funkcja ta również powinna się ponownie wykonać. 
 
-Innym przykładem może być reagowanie na zmiany pogodowe w aplikacji pokazując aktualny stan pogody w danym rejonie. czy mięscie. 
+Innym przykładem może być reagowanie na zmiany pogodowe w aplikacji pokazując aktualny stan pogody w danym rejonie. czy mieście. 
 Albo aktualizacja ceny kursu akcji, bądź wartości danej waluty.
 
 I to wszystko bez konieczności aktualizacji aplikacji!
 
-Poza aktualizacją danych useEffect posiada równiez funkcję return, która jest odpowiedzialna za czyszczenie (cleanUp)
-Jeżeli komponent ma zostać usunięty z widoku DOM i aby zapobiec wyciekowi pamięci, np: żeby fetchowanie nie było dalej aktywne w tle. 
+Poza aktualizacją danych, useEffect może również zwracać funkcję czyszczącą (cleanup function), która służy do sprzątania po efektach ubocznych.
+Taka funkcja uruchamiana jest:
+- przy odmontowaniu komponentu (czyli gdy znika z widoku DOM),
+- lub przed ponownym uruchomieniem efektu (jeśli zmienią się zależności w tablicy []).
+Jest to szczególnie ważne, aby:
+- zapobiec wyciekom pamięci,
+- przerwać niepotrzebne fetchowanie danych,
+- usunąć nasłuchiwacze zdarzeń lub
+- zatrzymać interwały i timeouty.
 
 https://react.dev/reference/react/useEffect
 
