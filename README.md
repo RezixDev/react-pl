@@ -78,7 +78,7 @@ https://react.dev/reference/react/useState
 
 ## useEffect
 
-Jeden z bardziej niezrozumiałych hooków w React. Wydaje mi się też, że nie jest on też często tłumaczony poprawnie w poradnikach, czy filmach na YouTube. 
+Jeden z bardziej niezrozumiałych hooków w React. Wydaje mi się też, że nie jest on też często tłumaczony poprawnie w poradnikach, czy filmach na YouTube. Często tłumaczący zbyt mocno opiera się na zbyt zwięzłym przykładzie, używając abstrakcyjnych pojęć.
 
 useEffect umożliwia komponentom Reactowym reagowanie na zmiany w aplikacji oraz na zdarzenia zewnętrzne. Efekt ten może być wykonywany:
 - po każdym renderze (jeśli nie podano tablicy zależności),
