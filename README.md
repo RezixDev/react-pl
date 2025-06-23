@@ -110,6 +110,7 @@ Poza aktualizacją danych, useEffect może również zwracać funkcję czyszczą
 Taka funkcja uruchamiana jest:
 - przy odmontowaniu komponentu (czyli gdy znika z widoku DOM),
 - lub przed ponownym uruchomieniem efektu (jeśli zmienią się zależności w tablicy []).
+  
 Jest to szczególnie ważne, aby:
 - zapobiec wyciekom pamięci,
 - przerwać niepotrzebne fetchowanie danych,
