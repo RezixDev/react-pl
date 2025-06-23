@@ -117,6 +117,14 @@ Jest to szczególnie ważne, aby:
 - usunąć nasłuchiwacze zdarzeń lub
 - zatrzymać interwały i timeouty.
 
+### Niebezpieczeństwa związane z useEffect 
+
+Mimo wielu zalet useEffect, ta funkcja, niepoprawnie użyta może spowodować wiele problemów, a nawet narobić wam niepotrzebnych kosztów.
+
+Jeżeli macie podpięte API, za które płacicie, to zbyt częste fetchowanie poprzez useEffect może spowodować zwiększenie kosztów. Dlatego korzystając z tego Hooka ważnym jest poprawne napisanie Timera, funkcji debounce, czy wcześniej wspomnianej funkcji czyszczącej.
+
+Dlatego zawsze sprawdzajcie waszą tablicę zależności, czyście wasze funkcje z efektów ubocznych, a jeżeli zajdzie taka potrzeba zróbcie debounce().
+
 https://react.dev/reference/react/useEffect
 
 
