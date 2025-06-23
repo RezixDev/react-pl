@@ -78,6 +78,19 @@ Inny przykład użycia useState to lista Todo:
 
 https://react.dev/reference/react/useState
 
+## useEffect
+
+Jeden z bardziej niezrozumiałych hooków w React.
+
+useEffect umożliwia komponentom Reactowym reagowanie na zmiany w aplikacji oraz na zdarzenia zewnętrzne. Przykładem może być aktualizacja informacji, gdy coś się zmieni, bądź dynamiczna odpowiedź, gdy coś się stanie w prawdziwym świecie np: zmiana wyniku meczu w piłce nożnej. 
+
+W skrócie: useEffect pozwala uruchamiać efekty uboczne (ang. side effects) — czyli wszystko to, co wykracza poza czysty rendering komponentu.
+
+Ale czym właściwie są "efekty uboczne"? Są to zdarzenia w twoim kodzie, które mają miejsce poza renderingem twojej aplikacji.
+
+https://react.dev/reference/react/useEffect
+
+
 # Wzorce
 
 ## Fasada
