@@ -82,7 +82,7 @@ Jeden z bardziej niezrozumiałych hooków w React.
 
 useEffect umożliwia komponentom Reactowym reagowanie na zmiany w aplikacji oraz na zdarzenia zewnętrzne. Efekt ten może być wykonywany:
 - po każdym renderze (jeśli nie podano tablicy zależności),
-- tylko raz (jeśli podano pustą tablicę []),
+- tylko raz (onMount, na początku ładowania komponentu, jeśli podano pustą tablicę []),
 - lub po zmianie określonych wartości (jeśli podano zależności w tablicy).
 
 Przykładem może być aktualizacja informacji, gdy coś się zmieni, bądź dynamiczna odpowiedź, gdy coś się stanie w prawdziwym świecie np: zmiana wyniku meczu w piłce nożnej. 
