@@ -27,11 +27,9 @@ Takim klasycznym przykładem będzie funkcja "count".
 const [count, setCount] = useState(0);
 ```
 
-count – to aktualna wartość stanu (tutaj: 0).
-
-setCount – to funkcja, która zmienia stan.
-
-useState(0) – 0 to wartość początkowa.
+- count – to aktualna wartość stanu (tutaj: 0).
+- setCount – to funkcja, która zmienia stan.
+- useState(0) – 0 to wartość początkowa.
 
 przykład w użyciu jako komponent:
 
@@ -82,7 +80,12 @@ https://react.dev/reference/react/useState
 
 Jeden z bardziej niezrozumiałych hooków w React.
 
-useEffect umożliwia komponentom Reactowym reagowanie na zmiany w aplikacji oraz na zdarzenia zewnętrzne. Przykładem może być aktualizacja informacji, gdy coś się zmieni, bądź dynamiczna odpowiedź, gdy coś się stanie w prawdziwym świecie np: zmiana wyniku meczu w piłce nożnej. 
+useEffect umożliwia komponentom Reactowym reagowanie na zmiany w aplikacji oraz na zdarzenia zewnętrzne. Efekt ten może być wykonywany:
+- po każdym renderze (jeśli nie podano tablicy zależności),
+- tylko raz (jeśli podano pustą tablicę []),
+- lub po zmianie określonych wartości (jeśli podano zależności w tablicy).
+
+Przykładem może być aktualizacja informacji, gdy coś się zmieni, bądź dynamiczna odpowiedź, gdy coś się stanie w prawdziwym świecie np: zmiana wyniku meczu w piłce nożnej. 
 
 W skrócie: useEffect pozwala uruchamiać efekty uboczne (ang. side effects) — czyli wszystko to, co wykracza poza czysty rendering komponentu.
 
