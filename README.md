@@ -130,6 +130,10 @@ Dlatego zawsze sprawdzajcie waszą tablicę zależności, czyście wasze funkcje
 
 https://react.dev/reference/react/useEffect
 
+## useContext (od React 19 use)
+
+Context.Provider
+
 
 # Wzorce
 
